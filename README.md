@@ -12,6 +12,9 @@ Version 2 - Added RenderTo attribute
 
 https://github.com/VaclavElias/aspnetcore/commit/2563ab361d2f01d57edddb84c8a270fab4cd0c7a
 
+## Result
+![Rendered View](https://user-images.githubusercontent.com/4528464/89036331-6be2b080-d334-11ea-9a2b-5f4c2a952c6c.png)
+
 ## Index.chsmtl
 
 ```razor

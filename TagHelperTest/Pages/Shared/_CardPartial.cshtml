@@ -2,8 +2,9 @@
 <div class="col-sm-4">
     <div class="card">
         <div class="card-body">
-            @*<h5 class="card-title">@Model</h5>*@
-            @*This is not going to work <partial name="_Title">Hello</partial> *@
+            @*I want to wrap this <h5 class="card-title">@Model</h5>*@
+            @*This is not going to work because of RenderChild name conflict <partial name="_Title">Hello</partial> *@
+            @*This is going to work because of render-to*@
             <partial name="_Title" render-to="TitleChild">@Model</partial>
             @ViewData["RenderChild"]
         </div>

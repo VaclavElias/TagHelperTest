@@ -8,7 +8,9 @@
     <h1 class="display-4 mb-5 mt-5">Welcome</h1>
     <partial name="_WrapperPartial" model="@(("ASP.NET Documentation", "odd"))">
 
-        <div class="col-12"><p class="lead mb-5 mt-4">Learn to use ASP.NET Core to create web apps and services that are fast, secure, cross-platform, and cloud-based. Browse tutorials, sample code, fundamentals, API reference and more.</p></div>
+        <partial name="_HeaderPartial">
+            Learn to use ASP.NET Core to create web apps and services that are fast, secure, cross-platform, and cloud-based. Browse tutorials, sample code, fundamentals, API reference and more.
+        </partial>
 
         <partial name="_CardPartial" model="@("Create an ASP.NET Core app in 5 minutes")">
             <p>Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
@@ -25,8 +27,10 @@
     </partial>
 
     <partial name="_WrapperPartial" model="@(("Develop ASP.NET Core apps", "even"))">
-        
-        <div class="col-12"><p class="lead mb-5 mt-4">Choose interactive web apps, web API, MVC-patterned apps, real-time apps, and more.</p></div>
+
+        <partial name="_HeaderPartial">
+            Choose interactive web apps, web API, MVC-patterned apps, real-time apps, and more.
+        </partial>
 
         <partial name="_CardPartial" model="@("Interactive client-side Blazor apps")">
             <p>Develop with reusable UI components that can take advantage of WebAssembly for near-native performance.</p>

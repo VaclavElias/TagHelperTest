@@ -88,7 +88,7 @@ https://github.com/VaclavElias/aspnetcore/commit/2563ab361d2f01d57edddb84c8a270f
 </div>
 ```
 
-## _CaraPartial.cshmtl
+## _CardPartial.cshmtl
 
 ```razor
 @model string

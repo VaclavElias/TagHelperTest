@@ -1191,6 +1191,11 @@
             View to lookup if the view specified by <see cref="P:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.Name"/> cannot be located.
             </summary>
         </member>
+        <member name="P:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderTo">
+            <summary>
+            Render child to this ViewData kehy.
+            </summary>
+        </member>
         <member name="P:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ViewData">
             <summary>
             A <see cref="T:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary"/> to pass into the partial view.

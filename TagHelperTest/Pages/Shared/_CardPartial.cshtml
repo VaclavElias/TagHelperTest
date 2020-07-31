@@ -2,8 +2,9 @@
 <div class="col-sm-4">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">@Model</h5>
-            @*<partial name="_Title">Hello</partial>*@
+            @*<h5 class="card-title">@Model</h5>*@
+            @*This is not going to work <partial name="_Title">Hello</partial> *@
+            <partial name="_Title" render-to="TitleChild">@Model</partial>
             @ViewData["RenderChild"]
         </div>
     </div>

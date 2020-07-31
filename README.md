@@ -2,6 +2,16 @@
 
 Testing nested partial and child content in partial views.
 
+Changes in aspnetcore/src/Mvc/Mvc.TagHelpers/src/PartialTagHelper.cs
+
+Version 1 - Only 3 lines changed
+
+https://github.com/VaclavElias/aspnetcore/commit/e36395dc81d0307bffb98d5742701f3e1b77fc92
+
+Version 2 - Added RenderTo attribute
+
+https://github.com/VaclavElias/aspnetcore/commit/2563ab361d2f01d57edddb84c8a270fab4cd0c7a
+
 ## Index.chsmtl
 
 ```razor
@@ -66,4 +76,37 @@ Testing nested partial and child content in partial views.
         </div>
     </div>
 </section>
+```
+
+## _HeaderPartial.cshtml
+
+```razor
+<div class="col-12">
+    <p class="lead mb-5 mt-4">
+        @ViewData["RenderChild"]
+    </p>
+</div>
+```
+
+## _CaraPartial.cshmtl
+
+```razor
+@model string
+<div class="col-sm-4">
+    <div class="card">
+        <div class="card-body">
+            @*I want to wrap this <h5 class="card-title">@Model</h5>*@
+            @*This is not going to work because of RenderChild name conflict <partial name="_Title">Hello</partial> *@
+            @*This is going to work because of render-to*@
+            <partial name="_Title" render-to="TitleChild">@Model</partial>
+            @ViewData["RenderChild"]
+        </div>
+    </div>
+</div>
+```
+
+## _Title.cshmtl
+
+```razor
+<h5 class="card-title">@ViewData["TitleChild"]</h5>
 ```

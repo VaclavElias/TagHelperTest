@@ -1,0 +1,14 @@
+﻿@model (string Title, string Section)
+<section class="pt-4 pb-4 @Model.Section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text">
+                <h2>@Model.Title</h2>
+                <div class="row">
+                    @ViewData["RenderChild"]
+                </div>
+                <footer class="mt-4">Section Footer</footer>
+            </div>
+        </div>
+    </div>
+</section>

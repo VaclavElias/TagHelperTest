@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <partial name="_WrapperPartial" model="@(("ASP.NET Documentation", "odd"))">
+
+        <p class="lead mb-5">Learn to use ASP.NET Core to create web apps and services that are fast, secure, cross-platform, and cloud-based. Browse tutorials, sample code, fundamentals, API reference and more.</p>
+
+        <partial name="_CardPartial" model="@("Create an ASP.NET Core app in 5 minutes")">
+            <p>Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
+        </partial>
+
+        <partial name="_CardPartial" model="@("ASP.NET Core overview")">
+            <p>Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
+        </partial>
+        
+        <partial name="_CardPartial" model="@("Download .NET")">
+            <p>Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
+        </partial>
+
+    </partial>
+
+    <partial name="_WrapperPartial" model="@(("Develop ASP.NET Core apps", "even"))">
+        <p class="lead">Choose interactive web apps, web API, MVC-patterned apps, real-time apps, and more.</p>
+    </partial>
+</div>

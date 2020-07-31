@@ -1,6 +1,6 @@
 # TagHelperTest
 
-Testing nested partial and child content in partial views.
+Testing nested partial and child content in <partial> tag helper and partial views.
 
 Changes in aspnetcore/src/Mvc/Mvc.TagHelpers/src/PartialTagHelper.cs
 
